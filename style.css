@@ -1,0 +1,99 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #000;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* layout */
+#app {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* side panel */
+#side {
+    width: 160px;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-right: 2px solid #fff;
+}
+
+.stat {
+    text-align: center;
+}
+
+.label {
+    color: #ff0000;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+#score, #highScore {
+    color: #00ff00;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* game area */
+#gameWrap {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+/* canvas = wall visible */
+canvas {
+    background: #000;
+    border: 4px solid #fff;
+    width: 90vmin;
+    height: 90vmin;
+    display: block;
+}
+
+/* overlay */
+#overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gameOverBox {
+    text-align: center;
+}
+
+.gameOverText {
+    color: red;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#restartBtn {
+    background: #00ff00;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#restartBtn:hover {
+    background: #00cc00;
+}
+
+#overlay.hidden {
+    display: none !important;
+}

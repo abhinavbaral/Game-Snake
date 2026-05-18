@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+    <div id="side">
+        <div class="stat">
+            <div class="label">SCORE</div>
+            <div id="score">0</div>
+        </div>
+
+        <div class="stat">
+            <div class="label">HIGH</div>
+            <div id="highScore">0</div>
+        </div>
+    </div>
+
+    <div id="gameWrap">
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+</div>
+
+<div id="overlay" class="hidden">
+    <div class="gameOverBox">
+        <div class="gameOverText">GAME OVER</div>
+        <button id="restartBtn">RESTART</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
